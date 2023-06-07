@@ -1,23 +1,18 @@
 import java.util.Scanner;
 public class A
 {
-public static void main (String args[]){
+public static void main(String args[])
+{
 Scanner sc=new Scanner(System.in);
-String n;
-String c="";
-System.out.print("enter a string:");
-n=sc.next();
-int len=n.length()-1;
-for(int i=len;i>=0;i--)
+int n=sc.nextInt();
+for(int i=0;i<=10;i++)
 {
-c=c+n.charAt(i);
-}
-if(n.equalsIgnoreCase(c))
+if(i%2==0)
 {
-System.out.println("p0lindrom");
+System.out.print(i);
+if(i<n)
+System.out.print("$");
 }
-else
-{
-System.out.println("not polidrom");
 }
-}}
+}
+}
